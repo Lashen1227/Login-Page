@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="342.0" prefWidth="378.0" spacing="20.0" style="-fx-background-color: #cfb8b8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginpage_javafx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <AnchorPane prefHeight="196.0" prefWidth="330.0" style="-fx-background-color: #cfb8b8;">
+        <children>
+            <TextField layoutX="141.0" layoutY="78.0" style="-fx-border-color: #172973;" />
+            <Text layoutX="70.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+            <font>
+               <Font size="13.0" />
+            </font></Text>
+            <Text layoutX="72.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+            <font>
+               <Font size="13.0" />
+            </font></Text>
+            <TextField layoutX="141.0" layoutY="112.0" prefHeight="27.0" prefWidth="151.0" style="-fx-border-color: #172973;" />
+            <Text fill="#a61a1a" fontSmoothingType="LCD" layoutX="60.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Login Page" textAlignment="CENTER" underline="true">
+                <font>
+                    <Font name="Times New Roman" size="24.0" />
+                </font>
+            </Text>
+         <Label layoutX="32.0" layoutY="48.0" />
+        </children>
+    </AnchorPane>
+   <AnchorPane prefHeight="196.0" prefWidth="330.0" style="-fx-background-color: #cfb8b8;">
+      <children>
+         <Button accessibleRoleDescription="on" alignment="CENTER" layoutX="33.0" layoutY="14.0" onAction="#btn_click" opacity="0.76" prefHeight="37.0" prefWidth="124.0" text="Login" textAlignment="CENTER">
+            <font>
+               <Font name="System Bold" size="16.0" />
+            </font>
+         </Button>
+          <Button accessibleRoleDescription="on" alignment="CENTER" contentDisplay="CENTER" layoutX="184.0" layoutY="14.0" onAction="#cancel_btn_click" opacity="0.76" prefHeight="37.0" prefWidth="119.0" text="Cancel" textAlignment="CENTER">
+            <font>
+               <Font name="System Bold" size="16.0" />
+            </font>
+         </Button>
+      </children>
+   </AnchorPane>
+   <Text fill="#050404" strokeType="OUTSIDE" strokeWidth="0.0" text="Not a Member? Signup" textAlignment="CENTER" wrappingWidth="146.49298095703125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+
+    <Label fx:id="welcomeText" />
+</VBox>
